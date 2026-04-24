@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Castillo Pérez Asesorías y Consultorías | Abogados en Montería y Medellín</title>
+<meta name="description" content="Firma de abogados en Montería y Medellín. Servicios legales en derecho civil, penal, familia, laboral, administrativo y trámites de visas para Estados Unidos. Castillo Pérez Asesorías y Consultorías.">
+<meta name="keywords" content="abogados Montería, abogados Medellín, firma de abogados Colombia, derecho civil, derecho penal, derecho de familia, visas USA, peticiones familiares, Castillo Pérez, asesorías legales">
+<meta property="og:title" content="Castillo Pérez Asesorías y Consultorías | Abogados Colombia">
+<meta property="og:description" content="Firma de abogados con sedes en Montería y Medellín. Expertos en derecho civil, penal, familia, laboral, administrativo y trámites migratorios USA.">
+<meta property="og:url" content="https://castilloperezabogados.com">
+<link rel="canonical" href="https://castilloperezabogados.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --blue-deep: #0d2347;
+    --blue-mid: #1a3a6b;
+    --blue-accent: #1e5fb5;
+    --blue-light: #2e7dd1;
+    --blue-bright: #4a9eff;
+    --gold: #c9a84c;
+    --gold-light: #e2c47a;
+    --white: #ffffff;
+    --off-white: #f5f7fc;
+    --gray-light: #e8edf5;
+    --gray-mid: #8a96aa;
+    --text-dark: #0e1b2e;
+    --text-body: #2d3748;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-body);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(10, 22, 40, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    transition: all 0.3s ease;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-bright));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 900;
+    color: var(--white);
+    letter-spacing: -1px;
+    flex-shrink: 0;
+  }
+
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+  }
+  .logo-sub {
+    font-size: 9.5px; font-weight: 400;
+    color: var(--gold-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex; align-items: center; gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 1.5px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  .nav-cta {
+    background: linear-gradient(135deg, #25d366, #128c4d);
+    color: var(--white) !important;
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    display: flex; align-items: center; gap: 7px;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+  }
+  .nav-cta::after { display: none !important; }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(37,211,102,0.4) !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column; gap: 5px;
+    cursor: pointer; background: none; border: none; padding: 6px;
+  }
+  .hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--white); border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    background: var(--navy);
+    position: relative;
+    display: flex; align-items: center;
+    overflow: hidden;
+    padding-top: 72px;
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 70% 50%, rgba(30,95,181,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 10% 80%, rgba(74,158,255,0.08) 0%, transparent 60%),
+      linear-gradient(160deg, #0a1628 0%, #0d2347 50%, #091220 100%);
+  }
+
+  .hero-pattern {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: repeating-linear-gradient(
+      0deg, transparent, transparent 39px,
+      rgba(255,255,255,1) 39px, rgba(255,255,255,1) 40px
+    ),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 39px,
+      rgba(255,255,255,1) 39px, rgba(255,255,255,1) 40px
+    );
+  }
+
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    right: -100px; top: 50%; transform: translateY(-50%);
+    background: radial-gradient(circle, rgba(46,125,209,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 6s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.6; }
+    50% { transform: translateY(-50%) scale(1.1); opacity: 1; }
+  }
+
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto;
+    padding: 80px 5%;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 50px;
+    padding: 7px 16px;
+    margin-bottom: 28px;
+  }
+  .hero-badge span {
+    font-size: 12px; font-weight: 600;
+    color: var(--gold-light); letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .badge-dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.12;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 .accent {
+    background: linear-gradient(90deg, var(--blue-bright), var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-desc {
+    font-size: 16px; line-height: 1.8;
+    color: rgba(255,255,255,0.72);
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+
+  .hero-btns {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-light));
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 14.5px; font-weight: 600;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 0.25s;
+    box-shadow: 0 4px 20px rgba(30,95,181,0.4);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(30,95,181,0.6);
+  }
+
+  .btn-whatsapp {
+    background: linear-gradient(135deg, #25d366, #128c4d);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 14.5px; font-weight: 600;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 0.25s;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  }
+  .btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37,211,102,0.55);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 14.5px; font-weight: 600;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    transition: all 0.25s;
+  }
+  .btn-outline:hover {
+    border-color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .hero-stats {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(6px);
+  }
+
+  .stat-item {
+    padding: 20px 16px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900;
+    color: var(--white);
+    display: block;
+  }
+  .stat-num .plus { color: var(--gold); }
+  .stat-label {
+    font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-top: 4px; display: block;
+  }
+
+  .hero-visual {
+    position: relative; z-index: 2;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .hero-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 36px;
+    backdrop-filter: blur(12px);
+    width: 100%; max-width: 380px;
+  }
+
+  .hero-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .service-chip {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    animation: fadeInUp 0.5s ease both;
+  }
+  .service-chip:last-child { border-bottom: none; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .chip-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-light));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .chip-text {
+    font-size: 13.5px; font-weight: 500;
+    color: rgba(255,255,255,0.85);
+  }
+  .chip-sub {
+    font-size: 11px; color: rgba(255,255,255,0.4);
+  }
+
+  /* ===== SEDES STRIP ===== */
+  .sedes-strip {
+    background: linear-gradient(90deg, var(--blue-mid), var(--blue-accent));
+    padding: 18px 5%;
+    display: flex; align-items: center; justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .sede-item {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--white);
+    font-size: 13.5px; font-weight: 500;
+  }
+  .sede-item svg { opacity: 0.85; }
+
+  /* ===== SECTION BASE ===== */
+  section { padding: 96px 5%; }
+
+  .section-label {
+    display: inline-block;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase;
+    color: var(--blue-accent);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .section-title .accent {
+    color: var(--blue-accent);
+  }
+
+  .section-desc {
+    font-size: 16px; line-height: 1.8;
+    color: var(--gray-mid);
+    max-width: 600px;
+    margin-bottom: 52px;
+  }
+
+  .container {
+    max-width: 1200px; margin: 0 auto;
+  }
+
+  /* ===== QUIÉNES SOMOS ===== */
+  #quienes {
+    background: var(--off-white);
+  }
+
+  .quienes-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 72px; align-items: center;
+  }
+
+  .quienes-left {}
+
+  .mv-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin-top: 36px;
+  }
+
+  .mv-card {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 14px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .mv-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(10,22,40,0.1);
+  }
+  .mv-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue-accent), var(--blue-bright));
+  }
+
+  .mv-card-icon {
+    font-size: 28px; margin-bottom: 10px;
+  }
+  .mv-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+  }
+  .mv-card-text {
+    font-size: 13px; line-height: 1.65;
+    color: var(--gray-mid);
+  }
+
+  .quienes-right {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+
+  .value-item {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .value-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; font-weight: 900;
+    color: var(--gray-light);
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: 40px;
+  }
+  .value-body {}
+  .value-title {
+    font-size: 15px; font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+  }
+  .value-text {
+    font-size: 13.5px; line-height: 1.65;
+    color: var(--gray-mid);
+  }
+
+  /* ===== SERVICIOS ===== */
+  #servicios {
+    background: var(--white);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1.5px solid var(--gray-light);
+    border-radius: 16px;
+    padding: 30px 26px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s;
+    cursor: default;
+  }
+
+  .service-card:hover {
+    border-color: var(--blue-accent);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(30,95,181,0.14);
+  }
+
+  .service-card.featured {
+    background: linear-gradient(145deg, var(--navy), var(--blue-deep));
+    border-color: transparent;
+    color: var(--white);
+  }
+
+  .service-card.featured .service-title { color: var(--white); }
+  .service-card.featured .service-text { color: rgba(255,255,255,0.65); }
+  .service-card.featured .service-sub { color: rgba(255,255,255,0.5); }
+
+  .service-badge {
+    position: absolute; top: 16px; right: 16px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--navy);
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 50px;
+  }
+
+  .service-icon-wrap {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-light));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .service-card.featured .service-icon-wrap {
+    background: rgba(255,255,255,0.12);
+  }
+
+  .service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    line-height: 1.25;
+  }
+
+  .service-text {
+    font-size: 13.5px; line-height: 1.7;
+    color: var(--gray-mid);
+    margin-bottom: 16px;
+  }
+
+  .service-sub {
+    font-size: 12px; font-weight: 500;
+    color: var(--gray-mid);
+    letter-spacing: 0.5px;
+  }
+
+  .service-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-top: 14px;
+  }
+
+  .tag {
+    font-size: 11px; font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 50px;
+    background: var(--off-white);
+    color: var(--blue-mid);
+    border: 1px solid var(--gray-light);
+  }
+
+  .service-card.featured .tag {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.75);
+    border-color: rgba(255,255,255,0.15);
+  }
+
+  /* ===== VISAS USA ===== */
+  .visa-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue-deep) 100%);
+    position: relative; overflow: hidden;
+  }
+
+  .visa-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(46,125,209,0.15), transparent);
+  }
+
+  .visa-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+    position: relative; z-index: 1;
+  }
+
+  .visa-grid .section-title { color: var(--white); }
+  .visa-grid .section-label { color: var(--gold-light); }
+  .visa-grid .section-desc { color: rgba(255,255,255,0.65); }
+
+  .visa-list {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .visa-list li {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 14.5px; color: rgba(255,255,255,0.85);
+  }
+
+  .visa-list li::before {
+    content: '✓';
+    width: 22px; height: 22px;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-bright));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .visa-cards {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .visa-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 22px 18px;
+    transition: all 0.25s;
+  }
+  .visa-card:hover {
+    background: rgba(255,255,255,0.09);
+    border-color: rgba(255,255,255,0.22);
+    transform: translateY(-3px);
+  }
+
+  .visa-card-icon { font-size: 28px; margin-bottom: 10px; }
+  .visa-card-title {
+    font-size: 14px; font-weight: 700;
+    color: var(--white); margin-bottom: 6px;
+  }
+  .visa-card-text { font-size: 12.5px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+
+  /* ===== EQUIPO ===== */
+  #equipo {
+    background: var(--off-white);
+  }
+
+  .team-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .team-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--gray-light);
+    transition: all 0.25s;
+  }
+  .team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(10,22,40,0.12);
+  }
+
+  .team-avatar {
+    height: 200px;
+    background: linear-gradient(145deg, var(--blue-mid), var(--blue-deep));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 52px; font-weight: 900;
+    color: rgba(255,255,255,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team-avatar::after {
+    content: attr(data-initial);
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px; font-weight: 900;
+    color: rgba(255,255,255,0.25);
+  }
+
+  .team-avatar-icon {
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-bright));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 34px;
+    position: relative; z-index: 1;
+    box-shadow: 0 8px 24px rgba(30,95,181,0.4);
+  }
+
+  .team-body { padding: 24px 22px; }
+
+  .team-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+  }
+
+  .team-role {
+    font-size: 12.5px; font-weight: 600;
+    color: var(--blue-accent);
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .team-bio {
+    font-size: 13.5px; line-height: 1.65;
+    color: var(--gray-mid);
+    margin-bottom: 14px;
+  }
+
+  .team-spec {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+
+  .spec-tag {
+    font-size: 11px; font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 50px;
+    background: var(--off-white);
+    color: var(--blue-mid);
+    border: 1px solid var(--gray-light);
+  }
+
+  /* ===== TESTIMONIOS ===== */
+  #testimonios {
+    background: var(--white);
+  }
+
+  .testimonios-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+
+  .testimonio-card {
+    background: var(--off-white);
+    border: 1px solid var(--gray-light);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: all 0.2s;
+  }
+  .testimonio-card:hover {
+    box-shadow: 0 10px 30px rgba(10,22,40,0.09);
+    transform: translateY(-3px);
+  }
+
+  .stars {
+    display: flex; gap: 3px; margin-bottom: 14px;
+  }
+  .star { color: #f5a623; font-size: 16px; }
+
+  .testimonio-text {
+    font-size: 14px; line-height: 1.75;
+    color: var(--text-body);
+    font-style: italic;
+    margin-bottom: 18px;
+  }
+
+  .testimonio-author {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .author-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue-accent), var(--blue-bright));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-size: 14px; font-weight: 700;
+    color: var(--text-dark);
+  }
+  .author-city {
+    font-size: 12px; color: var(--gray-mid);
+  }
+
+  /* ===== SEDES ===== */
+  #sedes {
+    background: var(--off-white);
+  }
+
+  .sedes-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .sede-card {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.25s;
+  }
+  .sede-card:hover {
+    box-shadow: 0 16px 44px rgba(10,22,40,0.1);
+    transform: translateY(-4px);
+  }
+
+  .sede-header {
+    background: linear-gradient(135deg, var(--navy), var(--blue-mid));
+    padding: 30px 28px;
+    display: flex; align-items: center; gap: 16px;
+  }
+
+  .sede-flag {
+    font-size: 40px;
+  }
+
+  .sede-header-text {}
+  .sede-city {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 800;
+    color: var(--white);
+  }
+  .sede-dept {
+    font-size: 12px; color: rgba(255,255,255,0.55);
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+
+  .sede-body { padding: 28px; }
+
+  .sede-info-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    margin-bottom: 14px;
+    font-size: 14px; color: var(--text-body);
+    line-height: 1.5;
+  }
+  .sede-info-item svg { flex-shrink: 0; margin-top: 2px; }
+
+  .sede-wha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25d366, #128c4d);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px; font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.2s;
+  }
+  .sede-wha:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+  }
+
+  /* ===== CTA FINAL ===== */
+  .cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue-deep) 60%, #0a2240 100%);
+    text-align: center;
+    padding: 100px 5%;
+    position: relative; overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 100% at 50% 50%, rgba(46,125,209,0.12), transparent);
+  }
+
+  .cta-section .section-label { color: var(--gold-light); }
+  .cta-section .section-title { color: var(--white); }
+  .cta-section .section-desc { color: rgba(255,255,255,0.65); margin: 0 auto 40px; }
+
+  .cta-btns {
+    display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;
+    position: relative; z-index: 1;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #05101e;
+    padding: 60px 5% 30px;
+  }
+
+  .footer-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 28px;
+  }
+
+  .footer-brand .logo-name { font-size: 17px; }
+
+  .footer-desc {
+    font-size: 13px; line-height: 1.75;
+    color: rgba(255,255,255,0.4);
+    margin-top: 14px; margin-bottom: 20px;
+  }
+
+  .footer-social {
+    display: flex; gap: 10px;
+  }
+
+  .social-btn {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .social-btn:hover {
+    background: rgba(30,95,181,0.25);
+    border-color: rgba(30,95,181,0.4);
+  }
+
+  .footer-col-title {
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 2px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.5);
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: rgba(255,255,255,0.9); }
+
+  .footer-contact-item {
+    display: flex; gap: 10px; align-items: flex-start;
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .footer-contact-item svg { flex-shrink: 0; margin-top: 2px; opacity: 0.6; }
+
+  .footer-bottom {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px; color: rgba(255,255,255,0.28);
+    flex-wrap: wrap; gap: 8px;
+  }
+
+  .footer-bottom a {
+    color: rgba(255,255,255,0.28);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-bottom a:hover { color: rgba(255,255,255,0.6); }
+
+  /* ===== FLOATING WHATSAPP ===== */
+  .wa-float {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    z-index: 999;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+  }
+
+  .wa-bubble {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 14px;
+    padding: 12px 16px;
+    font-size: 13px; font-weight: 600;
+    color: var(--text-dark);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    animation: fadeInBubble 0.4s 1.5s ease both;
+    max-width: 220px;
+    line-height: 1.4;
+  }
+
+  @keyframes fadeInBubble {
+    from { opacity: 0; transform: translateY(10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .wa-btn {
+    width: 60px; height: 60px;
+    background: linear-gradient(135deg, #25d366, #128c4d);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+    text-decoration: none;
+    animation: waPulse 2.5s ease-in-out infinite;
+    transition: transform 0.2s;
+  }
+  .wa-btn:hover { transform: scale(1.08); }
+
+  @keyframes waPulse {
+    0% { box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+    50% { box-shadow: 0 6px 36px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.08); }
+    100% { box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+  }
+
+  /* ===== MOBILE ===== */
+  @media (max-width: 900px) {
+    nav { padding: 0 4%; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .hero-content { grid-template-columns: 1fr; padding: 60px 4%; }
+    .hero-visual { display: none; }
+
+    .quienes-grid { grid-template-columns: 1fr; gap: 40px; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .visa-grid { grid-template-columns: 1fr; gap: 40px; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .testimonios-grid { grid-template-columns: 1fr; }
+    .sedes-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .sedes-strip { gap: 24px; flex-direction: column; text-align: center; }
+    .mv-cards { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    section { padding: 64px 4%; }
+    .visa-cards { grid-template-columns: 1fr; }
+    .hero-btns { flex-direction: column; }
+    .hero-btns a { width: 100%; justify-content: center; }
+    .cta-btns { flex-direction: column; align-items: center; }
+    .cta-btns a { width: 90%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="logo-wrap" href="#">
+    <div class="logo-icon">CP</div>
+    <div class="logo-text">
+      <span class="logo-name">Castillo Pérez</span>
+      <span class="logo-sub">Asesorías y Consultorías</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#quienes">Quiénes Somos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#visas">Visas USA</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#sedes">Sedes</a></li>
+    <li>
+      <a href="https://wa.me/573000000000?text=Hola,%20necesito%20asesoría%20legal" target="_blank" class="nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span>Montería · Medellín · Colombia</span>
+      </div>
+      <h1>Soluciones Legales para <span class="accent">Proteger lo que Importa</span></h1>
+      <p class="hero-desc">En Castillo Pérez Asesorías y Consultorías le brindamos representación jurídica experta en todas las áreas del derecho. Con presencia en Montería y Medellín, somos su aliado legal de confianza.</p>
+      <div class="hero-btns">
+        <a href="#servicios" class="btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Nuestros Servicios
+        </a>
+        <a href="https://wa.me/573000000000?text=Hola,%20quiero%20una%20consulta%20legal%20gratuita" target="_blank" class="btn-whatsapp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consulta Gratis
+        </a>
+        <a href="#quienes" class="btn-outline">Quiénes Somos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">15<span class="plus">+</span></span>
+          <span class="stat-label">Años de exp.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">500<span class="plus">+</span></span>
+          <span class="stat-label">Clientes</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Áreas legales</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-title">⚖️ Áreas de Práctica</div>
+        <div class="service-chip" style="animation-delay:0.1s">
+          <div class="chip-icon">🏛️</div>
+          <div><div class="chip-text">Derecho Civil</div><div class="chip-sub">Contratos, sucesiones, propiedad</div></div>
+        </div>
+        <div class="service-chip" style="animation-delay:0.2s">
+          <div class="chip-icon">⚖️</div>
+          <div><div class="chip-text">Derecho Penal</div><div class="chip-sub">Defensa y representación</div></div>
+        </div>
+        <div class="service-chip" style="animation-delay:0.3s">
+          <div class="chip-icon">👨‍👩‍👧</div>
+          <div><div class="chip-text">Derecho de Familia</div><div class="chip-sub">Divorcios, custodia, herencias</div></div>
+        </div>
+        <div class="service-chip" style="animation-delay:0.4s">
+          <div class="chip-icon">🏢</div>
+          <div><div class="chip-text">Derecho Laboral</div><div class="chip-sub">Despidos, prestaciones, litigios</div></div>
+        </div>
+        <div class="service-chip" style="animation-delay:0.5s">
+          <div class="chip-icon">🇺🇸</div>
+          <div><div class="chip-text">Visas para EE.UU.</div><div class="chip-sub">Peticiones familiares y no inmigrantes</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEDES STRIP -->
+<div class="sedes-strip">
+  <div class="sede-item">
+    <svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    <span><strong>Montería:</strong> Cl. 34 #7-31, Córdoba</span>
+  </div>
+  <div style="width:1px; height:28px; background:rgba(255,255,255,0.25);"></div>
+  <div class="sede-item">
+    <svg width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+    <span><strong>Medellín:</strong> Calle 34 #34C-165 INT 402, Antioquia</span>
+  </div>
+  <div style="width:1px; height:28px; background:rgba(255,255,255,0.25);"></div>
+  <div class="sede-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span><strong>WhatsApp:</strong> Consulta Inmediata</span>
+  </div>
+</div>
+
+<!-- QUIÉNES SOMOS -->
+<section id="quienes">
+  <div class="container">
+    <div class="quienes-grid">
+      <div class="quienes-left">
+        <span class="section-label">Quiénes Somos</span>
+        <h2 class="section-title">Una Firma con <span class="accent">Propósito</span> y Excelencia Jurídica</h2>
+        <p class="section-desc">Castillo Pérez Asesorías y Consultorías es una firma de abogados colombiana con presencia en Montería y Medellín. Brindamos asesoría jurídica integral con alto nivel de compromiso, ética profesional y resultados concretos para nuestros clientes.</p>
+        <a href="#servicios" class="btn-primary" style="display:inline-flex;">
+          Conocer Nuestros Servicios →
+        </a>
+        <div class="mv-cards">
+          <div class="mv-card">
+            <div class="mv-card-icon">🎯</div>
+            <div class="mv-card-title">Misión</div>
+            <div class="mv-card-text">Brindar servicios jurídicos de excelencia con honestidad, compromiso y resultados eficaces que protejan los derechos e intereses de cada cliente.</div>
+          </div>
+          <div class="mv-card">
+            <div class="mv-card-icon">🔭</div>
+            <div class="mv-card-title">Visión</div>
+            <div class="mv-card-text">Ser la firma de abogados líder en la región Caribe y en Antioquia, reconocida por la calidad de sus servicios, la cercanía con sus clientes y su impacto positivo.</div>
+          </div>
+        </div>
+      </div>
+      <div class="quienes-right">
+        <div class="value-item">
+          <span class="value-num">01</span>
+          <div class="value-body">
+            <div class="value-title">Confidencialidad Garantizada</div>
+            <div class="value-text">Cada caso se maneja con la máxima discreción y privacidad, protegiendo la información de nuestros clientes en todo momento.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">02</span>
+          <div class="value-body">
+            <div class="value-title">Representación Personalizada</div>
+            <div class="value-text">No somos un call center legal. Cada cliente tiene un abogado dedicado que conoce su caso a fondo y lo acompaña en cada etapa del proceso.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">03</span>
+          <div class="value-body">
+            <div class="value-title">Resultados Comprobados</div>
+            <div class="value-text">Con más de 15 años de trayectoria, contamos con un historial sólido de casos exitosos en todas las áreas del derecho que atendemos.</div>
+          </div>
+        </div>
+        <div class="value-item">
+          <span class="value-num">04</span>
+          <div class="value-body">
+            <div class="value-title">Acceso a la Justicia</div>
+            <div class="value-text">Creemos que todos merecen acceso a representación legal de calidad. Ofrecemos consultas iniciales y planes flexibles adaptados a sus necesidades.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label">Áreas de Práctica</span>
+      <h2 class="section-title">Servicios Legales <span class="accent">Integrales</span></h2>
+      <p class="section-desc">Cubrimos todas las áreas del derecho que las personas y empresas en Colombia necesitan. Desde litigios civiles hasta trámites migratorios para EE.UU.</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- Civil -->
+      <div class="service-card">
+        <div class="service-icon-wrap">🏛️</div>
+        <div class="service-title">Derecho Civil</div>
+        <div class="service-text">Asesoría y representación en controversias entre particulares, contratos, bienes inmuebles, sucesiones y responsabilidad civil.</div>
+        <div class="service-tags">
+          <span class="tag">Contratos</span>
+          <span class="tag">Sucesiones</span>
+          <span class="tag">Propiedad</span>
+          <span class="tag">Hipotecas</span>
+          <span class="tag">Arrendamientos</span>
+        </div>
+      </div>
+
+      <!-- Penal -->
+      <div class="service-card featured">
+        <div class="service-badge">Urgente</div>
+        <div class="service-icon-wrap">⚖️</div>
+        <div class="service-title">Derecho Penal</div>
+        <div class="service-text">Defensa penal sólida desde la captura hasta el juicio oral. Protegemos sus derechos fundamentales con estrategia jurídica de alto nivel.</div>
+        <div class="service-tags">
+          <span class="tag">Defensa</span>
+          <span class="tag">Audiencias</span>
+          <span class="tag">Apelaciones</span>
+          <span class="tag">Medidas cautelares</span>
+        </div>
+      </div>
+
+      <!-- Familia -->
+      <div class="service-card">
+        <div class="service-icon-wrap">👨‍👩‍👧</div>
+        <div class="service-title">Derecho de Familia</div>
+        <div class="service-text">Acompañamiento empático en los asuntos más sensibles: divorcios, custodia de menores, alimentos, liquidaciones de sociedad conyugal.</div>
+        <div class="service-tags">
+          <span class="tag">Divorcios</span>
+          <span class="tag">Custodia</span>
+          <span class="tag">Alimentos</span>
+          <span class="tag">Adopciones</span>
+        </div>
+      </div>
+
+      <!-- Administrativo -->
+      <div class="service-card">
+        <div class="service-icon-wrap">🏢</div>
+        <div class="service-title">Derecho Administrativo</div>
+        <div class="service-text">Defensa y representación frente al Estado en acciones de nulidad, tutelas, derechos de petición y responsabilidad estatal.</div>
+        <div class="service-tags">
+          <span class="tag">Tutelas</span>
+          <span class="tag">Peticiones</span>
+          <span class="tag">Nulidades</span>
+          <span class="tag">Contencioso</span>
+        </div>
+      </div>
+
+      <!-- Laboral -->
+      <div class="service-card">
+        <div class="service-icon-wrap">👷</div>
+        <div class="service-title">Derecho Laboral</div>
+        <div class="service-text">Protección de los derechos de trabajadores y empleadores. Demandas por despido injusto, liquidaciones, acoso laboral y negociaciones colectivas.</div>
+        <div class="service-tags">
+          <span class="tag">Despidos</span>
+          <span class="tag">Liquidaciones</span>
+          <span class="tag">Pensiones</span>
+          <span class="tag">Acoso laboral</span>
+        </div>
+      </div>
+
+      <!-- Asesorías -->
+      <div class="service-card">
+        <div class="service-icon-wrap">📋</div>
+        <div class="service-title">Consultoría Legal</div>
+        <div class="service-text">Revisión y redacción de contratos, asesoría preventiva y acompañamiento legal continuo para personas naturales y empresas.</div>
+        <div class="service-tags">
+          <span class="tag">Contratos</span>
+          <span class="tag">Empresa</span>
+          <span class="tag">Preventiva</span>
+          <span class="tag">Conciliación</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VISAS USA -->
+<section id="visas" class="visa-section">
+  <div class="container">
+    <div class="visa-grid">
+      <div>
+        <span class="section-label">🇺🇸 Trámites Migratorios</span>
+        <h2 class="section-title">Visas para <span style="color:var(--blue-bright)">Estados Unidos</span></h2>
+        <p class="section-desc">Acompañamos a colombianos en sus sueños de reunificación familiar, viajes de negocio y residencia permanente en los Estados Unidos. Experiencia comprobada en trámites consulares.</p>
+        <ul class="visa-list">
+          <li>Peticiones familiares (I-130) para residentes y ciudadanos</li>
+          <li>Visas de turismo y negocios (B-1/B-2)</li>
+          <li>Visas de estudiante (F-1) y Exchange Visitor (J-1)</li>
+          <li>Visas de trabajo y habilidades especiales</li>
+          <li>Proceso de Green Card y Residencia Permanente</li>
+          <li>Asesoría en negación de visa y apelaciones</li>
+          <li>Reunificación familiar y VAWA</li>
+        </ul>
+        <a href="https://wa.me/573000000000?text=Hola,%20quiero%20información%20sobre%20trámites%20de%20visa%20para%20USA" target="_blank" class="btn-whatsapp" style="display:inline-flex;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar Proceso de Visa
+        </a>
+      </div>
+      <div class="visa-cards">
+        <div class="visa-card">
+          <div class="visa-card-icon">✈️</div>
+          <div class="visa-card-title">Visa Turismo B-2</div>
+          <div class="visa-card-text">Preparación completa del paquete consular para aumentar posibilidades de aprobación.</div>
+        </div>
+        <div class="visa-card">
+          <div class="visa-card-icon">👨‍👩‍👧</div>
+          <div class="visa-card-title">Petición Familiar</div>
+          <div class="visa-card-text">Tramitamos I-130 y otros formularios para reunificación familiar con ciudadanos y residentes.</div>
+        </div>
+        <div class="visa-card">
+          <div class="visa-card-icon">💼</div>
+          <div class="visa-card-title">Visa de Negocios</div>
+          <div class="visa-card-text">Asesoría para visas de inversión, trabajo y habilidades extraordinarias.</div>
+        </div>
+        <div class="visa-card">
+          <div class="visa-card-icon">🟢</div>
+          <div class="visa-card-title">Green Card</div>
+          <div class="visa-card-text">Orientación en el proceso de residencia permanente y naturalización americana.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label">Nuestro Equipo</span>
+      <h2 class="section-title">Abogados <span class="accent">Expertos</span> a su Servicio</h2>
+      <p class="section-desc">Contamos con un equipo de profesionales del derecho altamente capacitados, comprometidos con defender sus intereses con ética y excelencia.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" data-initial="C">
+          <div class="team-avatar-icon">👨‍⚖️</div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Dr. Castillo</div>
+          <div class="team-role">Socio Fundador · Director</div>
+          <div class="team-bio">Abogado con más de 15 años de experiencia en litigios civiles y penales. Especialista en representación judicial ante los juzgados de Montería y Medellín.</div>
+          <div class="team-spec">
+            <span class="spec-tag">Derecho Civil</span>
+            <span class="spec-tag">Derecho Penal</span>
+            <span class="spec-tag">Litigios</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" data-initial="P">
+          <div class="team-avatar-icon">👩‍⚖️</div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Dra. Pérez</div>
+          <div class="team-role">Socia · Derecho de Familia y Laboral</div>
+          <div class="team-bio">Especialista en derecho de familia y derecho laboral. Reconocida por su enfoque empático y resultados exitosos en casos de divorcio, custodia y derechos laborales.</div>
+          <div class="team-spec">
+            <span class="spec-tag">Familia</span>
+            <span class="spec-tag">Laboral</span>
+            <span class="spec-tag">Mediación</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" data-initial="E">
+          <div class="team-avatar-icon">👨‍💼</div>
+        </div>
+        <div class="team-body">
+          <div class="team-name">Especialista Migratorio</div>
+          <div class="team-role">Asesor · Visas y Migración USA</div>
+          <div class="team-bio">Experto en trámites consulares y peticiones migratorias para Estados Unidos. Ha acompañado a cientos de familias colombianas en sus procesos de visa y residencia.</div>
+          <div class="team-spec">
+            <span class="spec-tag">Visas USA</span>
+            <span class="spec-tag">Peticiones</span>
+            <span class="spec-tag">Green Card</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label">Testimonios</span>
+      <h2 class="section-title">Lo que Dicen <span class="accent">Nuestros Clientes</span></h2>
+      <p class="section-desc">La satisfacción de quienes confían en nosotros es nuestra mayor recompensa y motivación.</p>
+    </div>
+    <div class="testimonios-grid">
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonio-text">"Excelente atención y asesoría. Me ayudaron con mi caso de custodia y el resultado fue favorable. El Dr. y su equipo me explicaron todo el proceso con paciencia y profesionalismo."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">María Martínez</div>
+            <div class="author-city">Montería, Córdoba</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonio-text">"Me ayudaron con la visa para Estados Unidos. Llevaba años intentándolo y con Castillo Pérez lo logramos en pocos meses. Son muy responsables y conocen el proceso a fondo."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">C</div>
+          <div>
+            <div class="author-name">Carlos Hernández</div>
+            <div class="author-city">Medellín, Antioquia</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonio-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonio-text">"Enfrenté un proceso laboral muy difícil. Gracias a la firma, recuperé lo que me correspondía por ley. Siempre estuvieron disponibles y me mantuvieron informado durante todo el proceso."</p>
+        <div class="testimonio-author">
+          <div class="author-avatar">J</div>
+          <div>
+            <div class="author-name">Juan Romero</div>
+            <div class="author-city">Montería, Córdoba</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEDES -->
+<section id="sedes">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label">Nuestras Sedes</span>
+      <h2 class="section-title">Estamos <span class="accent">Donde Nos Necesita</span></h2>
+      <p class="section-desc">Contamos con oficinas en Montería y Medellín para atenderle de manera presencial o por medios digitales en todo Colombia.</p>
+    </div>
+    <div class="sedes-grid">
+
+      <!-- Montería -->
+      <div class="sede-card">
+        <div class="sede-header">
+          <div class="sede-flag">🌴</div>
+          <div class="sede-header-text">
+            <div class="sede-city">Montería</div>
+            <div class="sede-dept">Córdoba, Colombia</div>
+          </div>
+        </div>
+        <div class="sede-body">
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Cl. 34 #7-31, Montería, Córdoba</span>
+          </div>
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Lunes a Viernes: 8:00 AM – 6:00 PM<br>Sábados: 9:00 AM – 1:00 PM</span>
+          </div>
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>+57 300 000 0000</span>
+          </div>
+          <a href="https://wa.me/573000000000?text=Hola,%20los%20contacto%20desde%20la%20sede%20de%20Montería" target="_blank" class="sede-wha">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Montería
+          </a>
+        </div>
+      </div>
+
+      <!-- Medellín -->
+      <div class="sede-card">
+        <div class="sede-header" style="background: linear-gradient(135deg, #1a3a6b, #2e7dd1);">
+          <div class="sede-flag">🌺</div>
+          <div class="sede-header-text">
+            <div class="sede-city">Medellín</div>
+            <div class="sede-dept">Antioquia, Colombia</div>
+          </div>
+        </div>
+        <div class="sede-body">
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Calle 34 #34C-165 INT 402, Medellín, Antioquia</span>
+          </div>
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Lunes a Viernes: 8:00 AM – 6:00 PM<br>Sábados: 9:00 AM – 1:00 PM</span>
+          </div>
+          <div class="sede-info-item">
+            <svg width="16" height="16" fill="none" stroke="var(--blue-accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>+57 300 000 0000</span>
+          </div>
+          <a href="https://wa.me/573000000000?text=Hola,%20los%20contacto%20desde%20la%20sede%20de%20Medellín" target="_blank" class="sede-wha">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Medellín
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div style="position:relative; z-index:1;">
+    <span class="section-label">¿Necesita Asesoría?</span>
+    <h2 class="section-title" style="max-width:700px; margin:0 auto 16px;">Su Primer Paso hacia la <span style="color:var(--blue-bright)">Solución Legal</span> Empieza Aquí</h2>
+    <p class="section-desc">Contáctenos hoy mismo. Nuestro equipo está listo para escucharle, evaluar su caso y brindarle la orientación que necesita. No enfrente sus problemas legales solo.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/573000000000?text=Hola%20Castillo%20P%C3%A9rez%2C%20quiero%20una%20consulta%20legal%20gratuita" target="_blank" class="btn-whatsapp" style="font-size:15px; padding:15px 34px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escríbenos por WhatsApp
+      </a>
+      <a href="#sedes" class="btn-outline" style="font-size:15px; padding:15px 34px;">
+        Ver Nuestras Sedes
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo-wrap" href="#" style="margin-bottom:0;">
+        <div class="logo-icon">CP</div>
+        <div class="logo-text">
+          <span class="logo-name">Castillo Pérez</span>
+          <span class="logo-sub">Asesorías y Consultorías</span>
+        </div>
+      </a>
+      <p class="footer-desc">Firma de abogados con sedes en Montería y Medellín. Expertos en derecho civil, penal, familia, laboral, administrativo y trámites migratorios para EE.UU.</p>
+      <p style="font-size:12px; color:rgba(255,255,255,0.3); margin-bottom:14px;">🌐 castilloperezabogados.com</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" title="Facebook">📘</a>
+        <a href="#" class="social-btn" title="Instagram">📷</a>
+        <a href="#" class="social-btn" title="LinkedIn">💼</a>
+        <a href="https://wa.me/573000000000" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Servicios</div>
+      <ul class="footer-links">
+        <li><a href="#servicios">Derecho Civil</a></li>
+        <li><a href="#servicios">Derecho Penal</a></li>
+        <li><a href="#servicios">Derecho de Familia</a></li>
+        <li><a href="#servicios">Derecho Laboral</a></li>
+        <li><a href="#servicios">Derecho Administrativo</a></li>
+        <li><a href="#visas">Visas USA</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">La Firma</div>
+      <ul class="footer-links">
+        <li><a href="#quienes">Quiénes Somos</a></li>
+        <li><a href="#quienes">Misión y Visión</a></li>
+        <li><a href="#equipo">Nuestro Equipo</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#sedes">Sedes</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contacto</div>
+      <div class="footer-contact-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Cl. 34 #7-31<br>Montería, Córdoba</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Calle 34 #34C-165 INT 402<br>Medellín, Antioquia</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <a href="https://wa.me/573000000000" target="_blank" style="color:rgba(255,255,255,0.5); text-decoration:none;">+57 300 000 0000</a>
+      </div>
+      <div class="footer-contact-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <a href="mailto:info@castilloperezabogados.com" style="color:rgba(255,255,255,0.5); text-decoration:none;">info@castilloperezabogados.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Castillo Pérez Asesorías y Consultorías. Todos los derechos reservados.</span>
+    <span>
+      <a href="#">Política de Privacidad</a> · <a href="#">Términos de Uso</a>
+    </span>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div class="wa-float" id="waFloat">
+  <div class="wa-bubble" id="waBubble">
+    💬 ¡Hola! ¿Necesita asesoría legal? Escríbanos ahora.
+  </div>
+  <a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20información%20sobre%20servicios%20legales%20de%20Castillo%20Pérez" target="_blank" class="wa-btn" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 40) {
+      nav.style.boxShadow = '0 4px 32px rgba(0,0,0,0.3)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // Hamburger menu
+  let menuOpen = false;
+  function toggleMenu() {
+    menuOpen = !menuOpen;
+    const links = document.querySelector('.nav-links');
+    if (menuOpen) {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '72px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'rgba(10,22,40,0.98)';
+      links.style.padding = '20px 5%';
+      links.style.gap = '16px';
+      links.style.borderBottom = '1px solid rgba(255,255,255,0.08)';
+    } else {
+      links.style.display = 'none';
+    }
+  }
+
+  // Hide WhatsApp bubble after 6 seconds
+  setTimeout(() => {
+    const bubble = document.getElementById('waBubble');
+    if (bubble) {
+      bubble.style.transition = 'opacity 0.5s, transform 0.5s';
+      bubble.style.opacity = '0';
+      bubble.style.transform = 'translateY(8px) scale(0.95)';
+      setTimeout(() => bubble.remove(), 500);
+    }
+  }, 6000);
+
+  // Intersection Observer for fade-in animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .team-card, .testimonio-card, .sede-card, .mv-card, .visa-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
