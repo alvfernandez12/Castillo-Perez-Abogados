@@ -1,0 +1,64 @@
+/* base.css — variables, reinicio, tipografia, botones y utilidades comunes a todo el sitio */
+
+/* ===== FUENTES (alojadas localmente, subconjunto latino, variables) ===== */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 900;font-display:swap;src:url('../fonts/playfair-display-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 900;font-display:swap;src:url('../fonts/playfair-display-latin-wght-italic.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url('../fonts/dm-sans-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root {
+  --navy:        #0d1f2d;
+  --navy-2:      #141e2a;
+  --navy-3:      #1a2d3e;
+  --blue-mid:    #2d6375;
+  --blue-accent: #3d7f8f;
+  --blue-light:  #4e99aa;
+  --blue-bright: #6cb8c8;
+  --teal-pale:   #9ecdd4;
+  --white:       #ffffff;
+  --off-white:   #f5f9fa;
+  --gray-light:  #dde8ec;
+  --gray-mid:    #7a9099;
+  --text-dark:   #0d1f2d;
+  --text-body:   #2d3f4a;
+  --green-wa:    #25d366;
+  --green-dk:    #128c4d;
+  --danger:      #c0392b;
+  --r-sm:8px; --r-md:14px; --r-lg:22px; --r-xl:50px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--text-body);background:var(--white);overflow-x:hidden;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{cursor:pointer;font-family:inherit}
+.container{max-width:1160px;margin:0 auto;padding:0 28px}
+
+/* ===== BOTONES ===== */
+.btn-wa{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--green-wa),var(--green-dk));color:var(--white);font-weight:700;font-size:15px;padding:14px 28px;border-radius:var(--r-xl);box-shadow:0 4px 20px rgba(37,211,102,.38);transition:all .25s;border:none;cursor:pointer}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,211,102,.55)}
+.btn-blue{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--blue-accent),var(--blue-light));color:var(--white);font-weight:700;font-size:15px;padding:14px 28px;border-radius:var(--r-xl);box-shadow:0 4px 20px rgba(61,127,143,.4);transition:all .25s;border:none;cursor:pointer}
+.btn-blue:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(61,127,143,.6)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);font-weight:600;font-size:14px;padding:13px 24px;border-radius:var(--r-xl);border:1.5px solid rgba(255,255,255,.25);transition:all .25s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.05)}
+.btn-blue-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--blue-accent);font-weight:600;font-size:14px;padding:13px 24px;border-radius:var(--r-xl);border:1.5px solid var(--blue-accent);transition:all .25s}
+.btn-blue-outline:hover{background:var(--blue-accent);color:var(--white)}
+
+/* ===== SECCIÓN BASE ===== */
+.section-eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue-accent);display:block;margin-bottom:12px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:800;color:var(--text-dark);line-height:1.15;margin-bottom:16px}
+.section-title.light{color:var(--white)}
+.section-title .accent{color:var(--blue-accent)}
+.section-desc{font-size:16px;color:var(--gray-mid);line-height:1.8;max-width:580px;margin-bottom:48px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:500px){
+  section{padding-top:68px!important;padding-bottom:68px!important}
+}
+
+/* ===== MOVIMIENTO REDUCIDO ===== */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .js .reveal{opacity:1;transform:none}
+}
