@@ -1,0 +1,25 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores y herramientas locales
+.vscode/
+.idea/
+.claude/
+
+# Dependencias y salidas temporales
+node_modules/
+*.log
+
+# Credenciales: nunca se versionan
+.env
+.env.*
+
+# Documentos internos de estrategia: no se publican
+docs/
+
+# Fotos originales sin optimizar (se publican solo las versiones WebP)
+assets/img/equipo/*.jpg
+assets/img/equipo/*.jpeg
+assets/img/equipo/*.png
