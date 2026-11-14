@@ -12,6 +12,39 @@
     alDesplazar();
   }
 
+  // Las secciones lejanas se maquetan en diferido (content-visibility): al abrir la
+  // página con un ancla (#contacto) se recoloca cuando termina la carga.
+  if (location.hash.length > 1) {
+    window.addEventListener('load', function () {
+      var destino;
+      try { destino = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) { return; }
+      if (destino) destino.scrollIntoView({ behavior: 'instant', block: 'start' });
+    });
+  }
+
+  // Por el mismo motivo, tras un salto a un ancla se comprueba dónde quedó el destino:
+  // si las secciones intermedias cambiaron de altura durante el desplazamiento, se corrige.
+  document.addEventListener('click', function (e) {
+    var enlace = e.target.closest('a[href^="#"]');
+    if (!enlace || enlace.getAttribute('href').length < 2) return;
+    var destino = document.getElementById(enlace.getAttribute('href').slice(1));
+    if (!destino) return;
+
+    var ajustar = function () {
+      var margen = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      if (Math.abs(destino.getBoundingClientRect().top - margen) > 8) {
+        destino.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }
+    };
+
+    if ('onscrollend' in window) {
+      window.addEventListener('scrollend', ajustar, { once: true });
+      setTimeout(function () { window.removeEventListener('scrollend', ajustar); }, 2500);
+    } else {
+      setTimeout(ajustar, 900);
+    }
+  });
+
   if (!boton || !links) return;
 
   function abrir(estado) {
