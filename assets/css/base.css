@@ -1,11 +1,11 @@
 /* base.css — fuentes, variables, reinicio, tipografía, botones y utilidades comunes a todo el sitio */
 
 /* ===== FUENTES (alojadas localmente, subconjunto latino) =====
-   Libre Baskerville 400, 700 y 400 cursiva para títulos; Source Sans 3 variable (400-700) para texto. */
-@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/libre-baskerville-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:700;font-display:swap;src:url('../fonts/libre-baskerville-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Libre Baskerville';font-style:italic;font-weight:400;font-display:swap;src:url('../fonts/libre-baskerville-latin-400-italic.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url('../fonts/source-sans-3-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+   Public Sans en pesos 400, 500, 600 y 700 para todo el sitio. */
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/public-sans-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/public-sans-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/public-sans-latin-600-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:700;font-display:swap;src:url('../fonts/public-sans-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 /* ===== VARIABLES ===== */
 :root{
@@ -26,8 +26,8 @@
   --texto-tenue:#A9B4C3;     /* secundario sobre marino (7,9:1) */
   --whatsapp:#0E7A42;        /* solo en botones de WhatsApp (blanco encima: 5,4:1) */
   /* Tipografía */
-  --serif:'Libre Baskerville',Georgia,'Times New Roman',serif;
-  --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --font-display:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --font-body:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
   /* Medidas */
   --ancho:1140px;
   --margen:24px;
@@ -40,8 +40,8 @@
 
 /* ===== REINICIO ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{font-size:106.25%;scroll-behavior:smooth;scroll-padding-top:calc(var(--cabecera) + 12px);-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);font-size:1rem;line-height:1.6;color:var(--texto);background:var(--blanco);padding-bottom:var(--barra-movil);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--cabecera) + 12px);-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);font-size:1rem;font-weight:400;line-height:1.65;color:var(--texto);background:var(--blanco);padding-bottom:var(--barra-movil);-webkit-font-smoothing:antialiased}
 img,svg{display:block;max-width:100%}
 img{height:auto}
 a{color:inherit;text-decoration:none}
@@ -50,10 +50,10 @@ button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
 :focus-visible{outline:2px solid var(--bronce);outline-offset:3px;border-radius:2px}
 
 /* ===== TIPOGRAFÍA ===== */
-h1,h2,h3{font-family:var(--serif);color:var(--titulo);font-weight:700;line-height:1.28;letter-spacing:-.012em}
-h1{font-size:clamp(1.7rem,4.6vw,2.55rem);line-height:1.2}
-h2{font-size:clamp(1.35rem,3vw,1.8rem)}
-h3{font-size:1.02rem;line-height:1.4;letter-spacing:0}
+h1,h2,h3{font-family:var(--font-display);color:var(--titulo);font-weight:700;font-style:normal;line-height:1.2;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,5.2vw,3.1rem);line-height:1.1}
+h2{font-size:clamp(1.55rem,3.4vw,2.15rem)}
+h3{font-size:1.125rem;line-height:1.3;letter-spacing:-.01em}
 p{max-width:68ch}
 strong{font-weight:600;color:var(--titulo)}
 
@@ -67,12 +67,12 @@ strong{font-weight:600;color:var(--titulo)}
 .encabezado-seccion{max-width:720px;margin-bottom:40px}
 .encabezado-seccion--centro{margin-left:auto;margin-right:auto;text-align:center}
 .encabezado-seccion--centro p{margin-left:auto;margin-right:auto}
-.sobretitulo{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bronce-oscuro);margin-bottom:14px}
+.sobretitulo{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronce-oscuro);margin-bottom:14px}
 .seccion--marino .sobretitulo{color:var(--bronce-claro)}
 .encabezado-seccion h2{margin-bottom:14px}
 .encabezado-seccion h2::after{content:'';display:block;width:56px;height:2px;background:var(--bronce);margin-top:18px}
 .encabezado-seccion--centro h2::after{margin-left:auto;margin-right:auto}
-.entradilla{font-size:1.08rem}
+.entradilla{font-size:1.0625rem}
 
 /* ===== ICONOS ===== */
 .ico{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -104,10 +104,10 @@ strong{font-weight:600;color:var(--titulo)}
 /* ===== RESPONSIVE ===== */
 @media(min-width:768px){
   :root{--margen:32px;--cabecera:76px}
-  body{font-size:1.06rem}
+  body{font-size:1.0625rem}
   .seccion{padding:88px 0}
   .encabezado-seccion{margin-bottom:52px}
-  .entradilla{font-size:1.14rem}
+  .entradilla{font-size:1.125rem}
 }
 @media(min-width:1100px){
   .seccion{padding:104px 0}

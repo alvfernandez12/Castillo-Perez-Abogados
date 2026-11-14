@@ -23,10 +23,11 @@
 <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
-<link rel="preload" href="/assets/fonts/libre-baskerville-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/public-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/public-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/base.css">
 <link rel="stylesheet" href="/assets/css/layout.css">
+<link rel="stylesheet" href="/assets/css/components.css">
 <link rel="stylesheet" href="/assets/css/pages/home.css">
 
 <script type="application/ld+json">
@@ -431,7 +432,7 @@
         <a class="btn btn--bronce" href="tel:+573104893626" data-cta="urgente">
           <svg class="ico" aria-hidden="true"><use href="#i-telefono"/></svg>Llamar ahora
         </a>
-        <a class="btn btn--linea-clara" href="https://wa.me/573104893626?text=Hola%2C%20tengo%20un%20caso%20urgente.%20La%20fecha%20l%C3%ADmite%20es%3A%20" target="_blank" rel="noopener" data-cta="urgente">
+        <a class="btn btn--linea-clara" href="https://wa.me/573104893626?text=Hola%2C%20tengo%20un%20caso%20urgente.%20La%20fecha%20l%C3%ADmite%20es%3A%20" target="_blank" rel="noopener" data-cta="urgente" data-urgencia="termino_proximo">
           <svg class="ico ico--relleno" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp
         </a>
       </div>
@@ -562,7 +563,7 @@
         <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Laboral corporativo:</strong> contratación, seguridad social, prevención de riesgos y defensa frente a contingencias administrativas y judiciales.</span></li>
         <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Contable y tributario:</strong> planeación fiscal, contabilidad empresarial y cumplimiento tributario.</span></li>
       </ul>
-      <a class="btn btn--bronce" href="https://wa.me/573104893626?text=Hola%2C%20busco%20asesor%C3%ADa%20para%20mi%20empresa.%20Escribo%20desde%20la%20p%C3%A1gina%20de%20inicio." target="_blank" rel="noopener" data-cta="empresas" data-area="empresarial">
+      <a class="btn btn--bronce" href="https://wa.me/573104893626?text=Hola%2C%20busco%20asesor%C3%ADa%20para%20mi%20empresa.%20Escribo%20desde%20la%20p%C3%A1gina%20de%20inicio." target="_blank" rel="noopener" data-cta="empresas" data-area="empresarial" data-urgencia="empresarial">
         <svg class="ico ico--relleno" aria-hidden="true"><use href="#i-wa"/></svg>Solicitar una reunión
       </a>
     </div>
@@ -586,7 +587,7 @@
       <p class="entradilla">Así es el recorrido, para que sepa qué esperar y qué tiene costo en cada paso.</p>
     </div>
     <ol class="pasos">
-      <li><h3>Nos cuenta su caso</h3><p>Indique el área, su ciudad y si hay alguna fecha límite.</p></li>
+      <li><h3>Nos cuenta su caso</h3><p>Con el formulario breve de esta página: área, ciudad y urgencia.</p></li>
       <li><h3>Filtro de viabilidad</h3><p>Revisión preliminar breve, sin costo.</p></li>
       <li><h3>Consulta especializada</h3><p>Sesión de diagnóstico jurídico, remunerada.</p></li>
       <li><h3>Propuesta y contratación</h3><p>Alcance y honorarios por escrito; contrato y poder.</p></li>
@@ -596,7 +597,7 @@
       <div class="bloque">
         <p class="bloque-marca">Sin costo</p>
         <h3>Filtro inicial de viabilidad</h3>
-        <p>Es una revisión preliminar breve para confirmar que su asunto corresponde a nuestras áreas de práctica y que no existe conflicto de intereses.</p>
+        <p>Es una revisión preliminar breve, a partir del formulario de esta página, para confirmar que su asunto corresponde a nuestras áreas de práctica y que no existe conflicto de intereses.</p>
         <p>No incluye concepto jurídico ni revisión de documentos.</p>
       </div>
       <div class="bloque">
@@ -717,7 +718,7 @@
           <li><svg class="ico" aria-hidden="true"><use href="#i-video"/></svg><span>Reuniones por videollamada o por llamada, sin desplazarse.</span></li>
           <li><svg class="ico" aria-hidden="true"><use href="#i-correo"/></svg><a href="mailto:castilloabogados22@gmail.com" data-cta="sedes">castilloabogados22@gmail.com</a></li>
         </ul>
-        <a class="enlace" href="https://wa.me/573104893626?text=Hola%2C%20quiero%20una%20reuni%C3%B3n%20virtual%20para%20evaluar%20mi%20caso.%20Escribo%20desde%20la%20p%C3%A1gina%20de%20inicio." target="_blank" rel="noopener" data-cta="sedes">Agendar una reunión virtual<svg class="ico" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+        <a class="enlace" href="https://wa.me/573104893626?text=Hola%2C%20quiero%20una%20reuni%C3%B3n%20virtual%20para%20evaluar%20mi%20caso.%20Escribo%20desde%20la%20p%C3%A1gina%20de%20inicio." target="_blank" rel="noopener" data-cta="sedes" data-ciudad="virtual_nacional">Agendar una reunión virtual<svg class="ico" aria-hidden="true"><use href="#i-flecha"/></svg></a>
       </div>
     </div>
   </div>
@@ -728,7 +729,7 @@
   <div class="contenedor">
     <span class="sobretitulo">Contacto</span>
     <h2>Cuéntenos su caso</h2>
-    <p>Indique el área, su ciudad y si hay alguna fecha límite. Le responde un abogado de la firma.</p>
+    <p>Responda tres preguntas breves sobre su caso y elija si continúa por WhatsApp o envía la solicitud por correo. Le responde un abogado de la firma.</p>
     <div class="cierre-acciones">
       <a class="btn btn--bronce" href="https://wa.me/573104893626?text=Hola%2C%20quiero%20solicitar%20la%20evaluaci%C3%B3n%20de%20mi%20caso.%20Escribo%20desde%20la%20p%C3%A1gina%20de%20inicio." target="_blank" rel="noopener" data-cta="cierre">
         <svg class="ico ico--relleno" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp
@@ -800,6 +801,9 @@
   </a>
 </div>
 
+<script src="/assets/js/analytics.js" defer></script>
+<script src="/assets/js/whatsapp.js" defer></script>
+<script src="/assets/js/precalificacion.js" defer></script>
 <script src="/assets/js/nav.js" defer></script>
 </body>
 </html>
