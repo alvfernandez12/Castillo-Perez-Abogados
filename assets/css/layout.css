@@ -44,6 +44,8 @@
 .pie-contacto a:hover{color:var(--blanco)}
 .pie-legal{padding-top:24px;display:grid;gap:10px;font-size:.8125rem;line-height:1.6}
 .pie-legal p{max-width:none}
+.pie-legal a{color:var(--texto-claro);border-bottom:1px solid var(--marino-linea);transition:color .18s ease}
+.pie-legal a:hover{color:var(--blanco)}
 
 /* ===== BARRA DE CONTACTO EN MÓVIL ===== */
 .barra-movil{position:fixed;left:0;right:0;bottom:0;z-index:850;display:grid;grid-template-columns:1fr 1fr;background:var(--blanco);border-top:1px solid var(--borde);box-shadow:0 -6px 20px rgba(11,31,58,.1);padding:8px;gap:8px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
