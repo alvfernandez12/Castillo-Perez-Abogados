@@ -23,3 +23,8 @@ docs/
 assets/img/equipo/*.jpg
 assets/img/equipo/*.jpeg
 assets/img/equipo/*.png
+
+# Fuentes descargadas que el sitio no usa (solo se publican los .woff2 de Public Sans)
+assets/fonts/*.ttf
+assets/fonts/README.txt
+assets/fonts/OFL.txt
