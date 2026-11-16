@@ -17,7 +17,7 @@
       '',
       'Área: ' + d.area,
       'Ciudad o modalidad: ' + d.ciudad,
-      'Urgencia: ' + d.urgencia
+      'Tipo de necesidad: ' + d.urgencia
     ];
     if (d.resumen) lineas.push('Resumen: ' + d.resumen);
     lineas.push('', 'Autorizo el tratamiento de mis datos personales (Ley 1581 de 2012).');

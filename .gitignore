@@ -31,3 +31,12 @@ assets/fonts/OFL.txt
 
 # Reglas internas del proyecto: no se publican en el sitio
 CLAUDE.md
+
+# Foto de portada original sin optimizar (se publican solo las versiones WebP)
+assets/img/hero/*.jpg
+assets/img/hero/*.jpeg
+assets/img/hero/*.png
+
+# Notas de trabajo sueltas en assets/ (no forman parte del sitio)
+assets/*.txt
+assets/*.ogg

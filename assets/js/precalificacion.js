@@ -13,34 +13,35 @@
   var CORREO = 'castilloabogados22@gmail.com';
   var ENVIO_URL = 'https://formsubmit.co/ajax/' + CORREO;
 
-  // Opciones: [valor para analítica, texto visible]
+  // Opciones: [valor para analítica, texto visible, aclaración opcional]
   var AREAS = [
-    ['penal', 'Derecho penal'],
-    ['laboral', 'Laboral y seguridad social'],
-    ['pensiones', 'Pensiones'],
-    ['familia', 'Derecho de familia'],
-    ['civil_comercial', 'Civil y comercial'],
-    ['administrativo', 'Administrativo y constitucional'],
-    ['empresarial', 'Empresarial y societario'],
-    ['migratorio', 'Trámites migratorios ante EE. UU.'],
-    ['tributario', 'Consultoría contable y tributaria'],
-    ['no_definida', 'No estoy seguro']
+    ['penal', 'Derecho Penal'],
+    ['laboral', 'Derecho Laboral y Seguridad Social', 'Incluye pensiones'],
+    ['familia', 'Derecho de Familia'],
+    ['civil_comercial', 'Derecho Civil y Comercial'],
+    ['administrativo', 'Derecho Administrativo y Constitucional'],
+    ['empresarial', 'Derecho Empresarial y Societario'],
+    ['migratorio', 'Trámites Migratorios (EE. UU.)'],
+    ['tributario', 'Consultoría Contable y Tributaria'],
+    ['otro', 'Otro / Consulta jurídica general']
   ];
   var CIUDADES = [
     ['monteria', 'Montería'],
-    ['envigado_medellin', 'Envigado / Medellín'],
-    ['virtual_nacional', 'Virtual, en Colombia'],
+    ['medellin', 'Medellín'],
+    ['virtual_nacional', 'Virtual en Colombia'],
     ['exterior', 'Desde el exterior']
   ];
   var URGENCIAS = [
-    ['termino_proximo', 'Tengo un término o una audiencia próxima'],
-    ['preventiva', 'Es una consulta preventiva'],
-    ['empresarial', 'Busco asesoría para una empresa']
+    ['termino_proximo', 'Tengo un término o una audiencia próxima', 'Captura, audiencia programada o término legal por vencer'],
+    ['caso_especifico', 'Asesoría integral o consulta para un caso específico', 'Tutelas, derechos de petición, divorcios, letras de cambio, deudas, comparendos, liquidación conyugal o revisión de documentos'],
+    ['preventiva', 'Consulta preventiva', 'Quiero orientación antes de tomar una decisión'],
+    ['empresarial', 'Asesoría para una empresa', 'Acompañamiento jurídico, laboral o tributario']
   ];
 
   function opciones(nombre, lista) {
     return lista.map(function (o) {
-      return '<label class="pq-opcion"><input type="radio" name="' + nombre + '" value="' + o[0] + '"><span>' + o[1] + '</span></label>';
+      return '<label class="pq-opcion"><input type="radio" name="' + nombre + '" value="' + o[0] + '"><span><b>' + o[1] + '</b>' +
+        (o[2] ? '<small>' + o[2] + '</small>' : '') + '</span></label>';
     }).join('');
   }
 
@@ -64,7 +65,7 @@
           '<div data-pq="p1">' +
             '<fieldset><legend>¿En qué área necesita asesoría?</legend><div class="pq-opciones">' + opciones('area', AREAS) + '</div></fieldset>' +
             '<fieldset><legend>¿Dónde o cómo prefiere ser atendido?</legend><div class="pq-opciones">' + opciones('ciudad', CIUDADES) + '</div></fieldset>' +
-            '<fieldset><legend>¿Qué tan urgente es?</legend><div class="pq-opciones pq-opciones--una">' + opciones('urgencia', URGENCIAS) + '</div></fieldset>' +
+            '<fieldset><legend>¿Qué tipo de necesidad tiene?</legend><div class="pq-opciones pq-opciones--una">' + opciones('urgencia', URGENCIAS) + '</div></fieldset>' +
             '<p class="pq-error" data-pq="error1" role="alert"></p>' +
           '</div>' +
 
@@ -179,7 +180,7 @@
   function pasoDos() {
     var area = elegido('area'), ciudad = elegido('ciudad'), urgencia = elegido('urgencia');
     if (!area || !ciudad || !urgencia) {
-      var falta = !area ? 'el área' : !ciudad ? 'dónde o cómo prefiere ser atendido' : 'qué tan urgente es';
+      var falta = !area ? 'el área' : !ciudad ? 'dónde o cómo prefiere ser atendido' : 'el tipo de necesidad';
       q('error1').textContent = 'Elija ' + falta + ' para continuar.';
       var grupo = form.querySelector('input[name="' + (!area ? 'area' : !ciudad ? 'ciudad' : 'urgencia') + '"]');
       if (grupo) grupo.focus();
@@ -223,7 +224,10 @@
     if (!d) return;
     var url = CPA.waUrl(CPA.waMensaje(d));
     evento('whatsapp_click', { area_juridica: d.areaId, ciudad: d.ciudadId, urgencia: d.urgenciaId, ubicacion_cta: origen, precalificado: true });
-    window.open(url, '_blank', 'noopener');
+    var ventana = null;
+    try { ventana = window.open(url, '_blank'); } catch (e) { ventana = null; }
+    if (ventana) { try { ventana.opener = null; } catch (e) {} }
+    else { window.location.href = url; return; } // bloqueada: se abre WhatsApp en esta misma pestaña
     confirmar('<h3>Se abrió WhatsApp con su mensaje</h3>' +
       '<p>Solo falta que lo envíe desde la aplicación. Un abogado de la firma revisará la viabilidad de su caso en horario de atención.</p>' +
       '<p>Si WhatsApp no se abrió, <a href="' + url + '" target="_blank" rel="noopener">ábralo desde aquí</a>.</p>');
@@ -244,7 +248,7 @@
       'Teléfono': d.telefono,
       'Área': d.area,
       'Ciudad o modalidad': d.ciudad,
-      'Urgencia': d.urgencia,
+      'Tipo de necesidad': d.urgencia,
       'Resumen': d.resumen || '(sin resumen)',
       'Autorización de datos (Ley 1581 de 2012)': 'Sí, otorgada el ' + new Date().toLocaleString('es-CO'),
       'Página de origen': location.href
