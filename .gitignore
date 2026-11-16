@@ -28,3 +28,6 @@ assets/img/equipo/*.png
 assets/fonts/*.ttf
 assets/fonts/README.txt
 assets/fonts/OFL.txt
+
+# Reglas internas del proyecto: no se publican en el sitio
+CLAUDE.md
