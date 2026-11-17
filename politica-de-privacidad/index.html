@@ -54,14 +54,6 @@
  ]
 }
 </script>
-<!-- Google tag (gtag.js) -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-HHW891HB94'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HHW891HB94');
-</script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -189,8 +181,15 @@
       <h2>9. Conservación</h2>
       <p>Los datos se conservan mientras sean necesarios para las finalidades descritas y durante el tiempo que exijan las normas legales, contables y profesionales aplicables. Si usted no contrata los servicios, puede pedir en cualquier momento la supresión de los datos de su consulta.</p>
 
-      <h2>10. Cookies y analítica</h2>
-      <p>A la fecha de esta política, este sitio web no usa cookies de analítica ni de publicidad. Si esto cambia, esta sección se actualizará y se le informará al ingresar al sitio.</p>
+      <h2 id="cookies">10. Cookies y analítica</h2>
+      <p>Este sitio usa Google Analytics 4, un servicio de Google LLC, para medir de forma agregada cómo se usa: páginas visitadas, tipo de dispositivo, ubicación aproximada y acciones como abrir el formulario, pulsar el botón de WhatsApp o el de llamada.</p>
+      <ul>
+        <li><strong>Solo con su consentimiento:</strong> las cookies de Google Analytics (por ejemplo, <code>_ga</code>) se instalan únicamente si usted pulsa «Aceptar» en el aviso que aparece al ingresar. Si las rechaza, el sitio funciona igual y no se carga ningún script de Google.</li>
+        <li><strong>Sin datos de su consulta:</strong> la información que se envía a Google Analytics no incluye su nombre, su teléfono ni el contenido de su consulta; solo el área jurídica, la ciudad o modalidad y la página desde la que actúa.</li>
+        <li><strong>Transferencia internacional:</strong> Google puede tratar estos datos en servidores ubicados fuera de Colombia, conforme a sus propias políticas.</li>
+        <li><strong>Su decisión se recuerda:</strong> el sitio guarda en su navegador si aceptó o rechazó, para no volver a preguntarle. Puede cambiarla en cualquier momento desde el enlace «Preferencias de cookies» al pie de cada página; si retira el consentimiento, las cookies de analítica se eliminan.</li>
+      </ul>
+      <p>El sitio no usa cookies de publicidad.</p>
 
       <h2>11. Cambios en esta política</h2>
       <p>Cualquier cambio sustancial se publicará en esta página con la fecha de actualización correspondiente. Consulte también el <a href="/aviso-legal/">aviso legal y ético</a> del sitio.</p>
@@ -243,7 +242,7 @@
     </div>
     <div class="pie-legal">
       <p>Castillo Pérez Abogados es la marca de servicios jurídicos de Castillo Pérez Asesorías y Consultorías S.A.S., NIT 901.621.987-7. La información de este sitio es de carácter general y no constituye asesoría jurídica. Para ejercer sus derechos sobre datos personales (Ley 1581 de 2012), consulte la <a href="/politica-de-privacidad/">política de tratamiento de datos</a> o escriba a castilloabogados22@gmail.com.</p>
-      <p>© 2026 Castillo Pérez Asesorías y Consultorías S.A.S. · NIT 901.621.987-7<br><a href="/politica-de-privacidad/">Política de tratamiento de datos</a> · <a href="/aviso-legal/">Aviso legal</a></p>
+      <p>© 2026 Castillo Pérez Asesorías y Consultorías S.A.S. · NIT 901.621.987-7<br><a href="/politica-de-privacidad/">Política de tratamiento de datos</a> · <a href="/aviso-legal/">Aviso legal</a> · <button type="button" class="pie-cookies" data-cookies>Preferencias de cookies</button></p>
     </div>
   </div>
 </footer>
@@ -258,6 +257,7 @@
   </a>
 </div>
 
+<script src="/assets/js/consentimiento.js" defer></script>
 <script src="/assets/js/analytics.js" defer></script>
 <script src="/assets/js/whatsapp.js" defer></script>
 <script src="/assets/js/precalificacion.js" defer></script>

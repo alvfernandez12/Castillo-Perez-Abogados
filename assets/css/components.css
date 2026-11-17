@@ -76,3 +76,13 @@ html.pq-abierto{overflow:hidden}
   .pq-pie--dos .btn{flex:1;width:auto}
   .pq-pie--dos .pq-atras{flex-basis:100%}
 }
+
+/* ===== AVISO DE COOKIES ===== */
+.cookies{position:fixed;z-index:860;left:12px;right:12px;bottom:calc(var(--barra-movil) + 12px);max-width:560px;background:var(--marino);color:var(--texto-claro);border:1px solid var(--marino-linea);border-top:3px solid var(--bronce);border-radius:var(--radio-lg);padding:16px 18px;box-shadow:0 12px 40px rgba(5,14,28,.35)}
+.cookies p{font-size:.875rem;line-height:1.5;max-width:none}
+.cookies a{color:var(--blanco);border-bottom:1px solid var(--bronce)}
+.cookies-acciones{display:flex;gap:10px;margin-top:12px}
+.cookies-acciones .btn{flex:1;min-height:44px;padding:8px 14px;font-size:.9375rem}
+@media(min-width:900px){
+  .cookies{left:24px;right:auto;bottom:24px}
+}

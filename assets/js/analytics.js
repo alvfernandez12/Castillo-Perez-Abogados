@@ -3,7 +3,9 @@
 // Regla: aquí nunca entran datos personales (nombre, teléfono ni texto libre).
 // Solo viajan el área, la ciudad o modalidad, la urgencia, la página y el botón pulsado.
 (function () {
-  // ID del contenedor de Google Tag Manager, con el formato 'GTM-XXXXXXX'.
+  // Google Analytics 4 se carga desde consentimiento.js, solo si el visitante acepta las cookies.
+  //
+  // ID opcional de un contenedor de Google Tag Manager, con el formato 'GTM-XXXXXXX'.
   // Mientras esté vacío no se carga ningún script externo: los eventos solo se
   // acumulan en window.dataLayer, listos para cuando se active la medición.
   // Antes de poner el ID hay que actualizar la sección de cookies de la política
@@ -22,7 +24,15 @@
     PERMITIDAS.forEach(function (clave) {
       if (datos && datos[clave] !== undefined && datos[clave] !== '') carga[clave] = datos[clave];
     });
-    window.dataLayer.push(carga);
+    // Con consentimiento, GA4 (cargado por consentimiento.js) recibe el evento directamente.
+    // Sin consentimiento, el evento solo queda en dataLayer y no sale del navegador.
+    if (typeof window.gtag === 'function') {
+      var parametros = {};
+      Object.keys(carga).forEach(function (k) { if (k !== 'event') parametros[k] = carga[k]; });
+      window.gtag('event', nombre, parametros);
+    } else {
+      window.dataLayer.push(carga);
+    }
   };
 
   // Llamadas: cualquier enlace tel: de la página.
