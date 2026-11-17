@@ -1,0 +1,79 @@
+/* interior.css — páginas internas: cabecera, migas, áreas de práctica, sedes, nosotros y textos legales */
+
+/* ===== CABECERA DE PÁGINA ===== */
+.cabecera-pagina{position:relative;overflow:hidden;background:var(--marino);color:var(--texto-claro);padding:40px 0 44px}
+.cabecera-pagina::before{content:'';position:absolute;inset:0;background:radial-gradient(800px 420px at 92% 0%,rgba(176,141,87,.12),transparent 60%);pointer-events:none}
+.cabecera-pagina .contenedor{position:relative}
+.cabecera-pagina .sobretitulo{color:var(--bronce-claro)}
+.cabecera-pagina h1{color:var(--blanco);font-size:clamp(1.7rem,4.2vw,2.5rem);max-width:24ch}
+.cabecera-entradilla{font-size:1.0625rem;max-width:62ch;margin-top:16px;color:var(--texto-claro)}
+.cabecera-acciones{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.migas{display:flex;flex-wrap:wrap;gap:8px;font-size:.85rem;color:var(--texto-tenue);margin-bottom:16px}
+.migas a{color:var(--bronce-claro)}
+.migas a:hover{color:var(--blanco)}
+
+/* ===== TEXTOS LEGALES ===== */
+.prosa{max-width:760px;padding:48px 0 72px}
+.prosa-fecha{font-size:.85rem;color:var(--bronce-oscuro);font-weight:600;letter-spacing:.04em;margin-bottom:24px}
+.prosa h2{font-size:clamp(1.2rem,2.4vw,1.4rem);margin:40px 0 12px;padding-top:28px;border-top:1px solid var(--borde)}
+.prosa p{max-width:none;margin-bottom:14px}
+.prosa ul{margin:0 0 16px;display:grid;gap:8px}
+.prosa li{position:relative;padding-left:20px}
+.prosa li::before{content:'';position:absolute;left:0;top:.78em;width:8px;height:1.5px;background:var(--bronce)}
+.prosa a:not(.btn){color:var(--marino);font-weight:600;border-bottom:1px solid var(--bronce)}
+.prosa a:not(.btn):hover{color:var(--bronce-oscuro)}
+.prosa-datos{background:var(--piedra);border:1px solid var(--borde);border-radius:var(--radio-lg);padding:20px 22px}
+.prosa-datos li{padding-left:0}
+.prosa-datos li::before{display:none}
+
+/* ===== ÁREA DE PRÁCTICA ===== */
+.area-rejilla{display:grid;gap:40px}
+.grupo{scroll-margin-top:calc(var(--cabecera) + 16px)}
+.grupo+.grupo{margin-top:36px;padding-top:32px;border-top:1px solid var(--borde)}
+.grupo h3{font-size:1.1875rem;margin-bottom:6px}
+.grupo .lista-check{margin:16px 0 18px}
+.texto-area p+p{margin-top:12px}
+.lateral{display:grid;gap:14px;align-content:start}
+.lateral-titulo{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronce-oscuro)}
+.responsable{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:14px 16px;background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio-lg);transition:border-color .18s ease}
+.responsable:hover{border-color:var(--bronce)}
+.responsable-foto{width:60px;height:60px;border-radius:50%;overflow:hidden;background:var(--marino);border:1px solid var(--bronce);display:grid;place-items:center;color:var(--bronce);font-weight:500;letter-spacing:.06em;font-size:.95rem}
+.responsable-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.responsable strong{display:block;font-size:.9375rem;line-height:1.3;color:var(--titulo)}
+.responsable small{display:block;font-size:.8125rem;line-height:1.4;color:var(--texto);margin-top:3px}
+.tarjeta-cta{background:var(--marino);color:var(--texto-claro);border-top:3px solid var(--bronce);border-radius:var(--radio-lg);padding:22px}
+.tarjeta-cta h3{color:var(--blanco);font-size:1.0625rem;margin-bottom:8px}
+.tarjeta-cta p{font-size:.9375rem;margin-bottom:16px}
+.tarjeta-cta .btn{width:100%}
+.tarjeta-cta .btn+.btn{margin-top:10px}
+
+.otras-areas{margin-top:48px;padding-top:28px;border-top:1px solid var(--borde);max-width:820px;margin-left:auto;margin-right:auto}
+.otras-areas h2{font-family:var(--font-body);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--bronce-oscuro);margin-bottom:14px}
+.otras-areas ul{display:flex;flex-wrap:wrap;gap:8px}
+.otras-areas a{display:inline-block;font-size:.875rem;color:var(--titulo);background:var(--blanco);border:1px solid var(--borde);border-radius:100px;padding:7px 14px;transition:border-color .18s ease}
+.otras-areas a:hover{border-color:var(--bronce)}
+
+/* ===== SEDES Y NOSOTROS ===== */
+.sede-rejilla{display:grid;gap:24px;align-items:start}
+.lista-areas{display:grid;gap:10px;margin-top:18px}
+.lista-areas a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);font-weight:500;color:var(--titulo);transition:border-color .18s ease}
+.lista-areas a:hover{border-color:var(--bronce)}
+.lista-areas .ico{color:var(--bronce-oscuro);width:1em;height:1em}
+.nota-sede{font-size:.9375rem;margin-top:16px}
+.texto-firma p+p{margin-top:14px}
+
+/* ===== RESPONSIVE ===== */
+@media(min-width:600px){
+  .cabecera-acciones{flex-direction:row;flex-wrap:wrap}
+}
+@media(min-width:768px){
+  .cabecera-pagina{padding:56px 0 60px}
+  .prosa{padding:64px 0 96px}
+}
+@media(min-width:960px){
+  .area-rejilla{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:64px;align-items:start}
+  .sede-rejilla{grid-template-columns:1fr 1fr;gap:48px}
+  .transparencia--tres{grid-template-columns:repeat(3,1fr)}
+}
+
+.sede .h3-like{font-size:1.125rem;letter-spacing:-.01em;margin-bottom:4px}

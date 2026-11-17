@@ -40,3 +40,6 @@ assets/img/hero/*.png
 # Notas de trabajo sueltas en assets/ (no forman parte del sitio)
 assets/*.txt
 assets/*.ogg
+
+# Generador local de las páginas internas (no forma parte del sitio publicado)
+tools/

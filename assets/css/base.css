@@ -95,6 +95,8 @@ strong{font-weight:600;color:var(--titulo)}
 .enlace{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--marino);border-bottom:1px solid var(--bronce);padding-bottom:2px;transition:gap .18s ease,color .18s ease}
 .enlace:hover{gap:12px;color:var(--bronce-oscuro)}
 .enlace .ico{width:1em;height:1em}
+.enlace--claro{color:var(--blanco)}
+.enlace--claro:hover{color:var(--bronce-claro)}
 
 /* ===== UTILIDADES ===== */
 .solo-lectores{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

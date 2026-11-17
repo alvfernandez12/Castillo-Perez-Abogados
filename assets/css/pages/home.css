@@ -112,6 +112,10 @@
   .persona-areas{grid-column:1 / -1}
 }
 
+.equipo-mas{margin-top:28px}
+.sede-mas{margin-top:12px}
+.empresas-mas{margin-top:18px}
+
 /* ===== EMPRESAS ===== */
 .empresas-rejilla{display:grid;gap:36px;align-items:center}
 .lista-check{display:grid;gap:14px;margin:26px 0 30px}

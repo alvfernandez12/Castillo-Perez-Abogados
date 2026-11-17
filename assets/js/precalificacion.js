@@ -161,11 +161,11 @@
     if (!dialogo) construir();
     abridor = disparador || null;
     origen = (disparador && disparador.getAttribute('data-cta')) || 'sin_etiqueta';
-    if (disparador) {
-      marcar('area', disparador.getAttribute('data-area'));
-      marcar('ciudad', disparador.getAttribute('data-ciudad'));
-      marcar('urgencia', disparador.getAttribute('data-urgencia'));
-    }
+    // Valor del botón pulsado o, si no lo trae, el de la página (<body data-area / data-ciudad>)
+    var pagina = document.body.dataset || {};
+    ['area', 'ciudad', 'urgencia'].forEach(function (n) {
+      marcar(n, (disparador && disparador.getAttribute('data-' + n)) || pagina[n]);
+    });
     q('error1').textContent = '';
     q('error2').textContent = '';
     mostrar('1');
