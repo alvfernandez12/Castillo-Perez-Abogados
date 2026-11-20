@@ -62,6 +62,39 @@
 .nota-sede{font-size:.9375rem;margin-top:16px}
 .texto-firma p+p{margin-top:14px}
 
+/* ===== ETAPAS DEL PROCESO ===== */
+.etapas-rejilla{display:grid;gap:40px}
+.etapas-titulo{font-size:1.1875rem;margin-bottom:6px}
+.etapas-intro{font-size:.9375rem;margin-bottom:6px}
+.etapas{counter-reset:etapa;margin-top:18px}
+.etapas li{counter-increment:etapa;position:relative;padding:0 0 22px 52px}
+.etapas li::before{content:counter(etapa);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--blanco);border:1.5px solid var(--bronce);display:grid;place-items:center;font-weight:700;font-size:.875rem;color:var(--marino)}
+.etapas li::after{content:'';position:absolute;left:16.5px;top:38px;bottom:4px;width:1px;background:var(--borde)}
+.etapas li:last-child{padding-bottom:0}
+.etapas li:last-child::after{display:none}
+.etapas h4{font-size:1rem;color:var(--titulo);padding-top:5px;margin-bottom:4px;letter-spacing:-.005em}
+.etapas p{font-size:.9375rem}
+.etapas-nota{margin-top:32px;padding:16px 20px;background:var(--blanco);border-left:3px solid var(--bronce);border-radius:0 var(--radio) var(--radio) 0;font-size:.9375rem;max-width:none}
+
+/* ===== PREPARAR Y MARCO LEGAL ===== */
+.preparar-rejilla{display:grid;gap:40px}
+.preparar-rejilla .lista-check{margin-top:24px}
+.normas{display:grid;gap:0;margin-top:12px;border-top:1px solid var(--borde)}
+.normas li{padding:14px 0;border-bottom:1px solid var(--borde)}
+.normas strong{display:block;font-size:.9375rem;line-height:1.35}
+.normas span{display:block;font-size:.875rem;margin-top:3px}
+.normas-nota{font-size:.8125rem;margin-top:14px}
+
+/* ===== CÓMO EMPEZAMOS (COMPACTO) ===== */
+.seccion--compacta{padding:48px 0}
+.como-empezamos{display:grid;gap:20px}
+.como-empezamos h2{font-size:clamp(1.3rem,2.6vw,1.6rem)}
+.pasos-breves{display:grid;gap:12px;counter-reset:paso}
+.pasos-breves li{counter-increment:paso;position:relative;padding-left:38px;font-size:.9375rem}
+.pasos-breves li::before{content:counter(paso);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--bronce);display:grid;place-items:center;font-size:.8125rem;font-weight:700;color:var(--marino);background:var(--blanco)}
+.nota-etica{margin-top:20px;font-size:.875rem;max-width:none}
+.sede-datos--grande li{font-size:1rem}
+
 /* ===== RESPONSIVE ===== */
 @media(min-width:600px){
   .cabecera-acciones{flex-direction:row;flex-wrap:wrap}
@@ -74,6 +107,9 @@
   .area-rejilla{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:64px;align-items:start}
   .sede-rejilla{grid-template-columns:1fr 1fr;gap:48px}
   .transparencia--tres{grid-template-columns:repeat(3,1fr)}
+  .etapas-rejilla--dos{grid-template-columns:1fr 1fr;gap:56px}
+  .preparar-rejilla{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .como-empezamos{grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
 }
 
 .sede .h3-like{font-size:1.125rem;letter-spacing:-.01em;margin-bottom:4px}
